@@ -1,0 +1,211 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 38%, rgba(0,195,186,1) 93%);
+}
+
+.items{ 
+  width: 240px;
+  height: 430px;
+  background-color: rgb(189, 186, 186);
+  margin: auto;
+  margin-top: 100px;
+  border: 2px white solid;
+  border-radius: 8px;
+}
+.items .buttons{
+    margin-left: 15px;
+    margin-top: 30px;
+}
+button{
+    font-size: 25px;
+      margin-top: 10px;
+      margin-left: 15px;
+      padding: 15px;
+      color: rgb(180, 180, 227);
+      background-color: rgb(62, 59, 59);
+      border: 2px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+}
+.zero-btn{
+    margin: auto;
+    margin-top: 5px;
+    
+
+}
+button:hover{
+    background-color: rgb(30, 30, 73);
+}
+
+input{
+    background-color: rgb(62, 59, 59);
+    border: 2px solid white;
+    margin-left: 12px;
+    margin-top: 25px;
+    height: 40px;
+    width: 210px;
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 9.5px;
+}
+ h2{
+    text-align: center;
+    color: white;
+    margin-bottom: -30px;
+}
+.clear-btn{
+    font-size: 15px;
+   padding: 10px;
+    margin-right: 10px
+}
+.enter-btn{
+    font-size: 15px;
+    padding: 10px;
+}
+.secondary-btns{
+    padding-right: 10px;
+    margin-left: -5px;
+}
+
+
+@media only screen and (max-width: 600px) {
+.items{ 
+  width: 240px;
+  height: 430px;
+  background-color: rgb(189, 186, 186);
+  margin: auto;
+  margin-top: 100px;
+  border: 2px white solid;
+  border-radius: 8px;
+}
+.items .buttons{
+    margin-left: 15px;
+    margin-top: 30px;
+}
+button{
+    font-size: 25px;
+      margin-top: 10px;
+      margin-left: 15px;
+      padding: 15px;
+      color: rgb(180, 180, 227);
+      background-color: rgb(62, 59, 59);
+      border: 2px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+}
+.zero-btn{
+    margin: auto;
+    margin-top: 5px;
+    
+
+}
+button:hover{
+    background-color: rgb(30, 30, 73);
+}
+
+input{
+    background-color: rgb(62, 59, 59);
+    border: 2px solid white;
+    margin-left: 12px;
+    margin-top: 25px;
+    height: 40px;
+    width: 210px;
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 9.5px;
+}
+ h2{
+    text-align: center;
+    color: white;
+    margin-bottom: -30px;
+}
+.clear-btn{
+    font-size: 15px;
+   padding: 10px;
+    margin-right: 10px
+}
+.enter-btn{
+    font-size: 15px;
+    padding: 10px;
+}
+.secondary-btns{
+    padding-right: 10px;
+    margin-left: -5px;
+}
+
+
+}
+
+@media only screen and (max-width: 768px) {
+.items{ 
+  width: 240px;
+  height: 430px;
+  background-color: rgb(189, 186, 186);
+  margin: auto;
+  margin-top: 100px;
+  border: 2px white solid;
+  border-radius: 8px;
+}
+.items .buttons{
+    margin-left: 15px;
+    margin-top: 30px;
+}
+button{
+    font-size: 25px;
+      margin-top: 10px;
+      margin-left: 15px;
+      padding: 15px;
+      color: rgb(180, 180, 227);
+      background-color: rgb(62, 59, 59);
+      border: 2px solid white;
+      border-radius: 10px;
+      cursor: pointer;
+}
+.zero-btn{
+    margin: auto;
+    margin-top: 5px;
+    
+
+}
+button:hover{
+    background-color: rgb(30, 30, 73);
+}
+
+input{
+    background-color: rgb(62, 59, 59);
+    border: 2px solid white;
+    margin-left: 12px;
+    margin-top: 25px;
+    height: 40px;
+    width: 210px;
+    color: white;
+    margin-left: 10px;
+    text-align: center;
+    font-size: 9.5px;
+}
+ h2{
+    text-align: center;
+    color: white;
+    margin-bottom: -30px;
+}
+.clear-btn{
+    font-size: 15px;
+   padding: 10px;
+    margin-right: 10px
+}
+.enter-btn{
+    font-size: 15px;
+    padding: 10px;
+}
+.secondary-btns{
+    padding-right: 10px;
+    margin-left: -5px;
+}
+
+
+}
