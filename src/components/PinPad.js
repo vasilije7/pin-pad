@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const correctPin = "1234"; 
 function PinPad() {
@@ -12,26 +12,34 @@ function PinPad() {
     setPin(event.target.value);
   };
 
-
-
+useEffect(() => {
+        if (pin === correctPin) {
+            setTries(0);
+        }
+      },[pin]);
+useEffect(() => {
+        if (tries>2) {
+            setTries(0);
+        }
+      },[tries]);
 const clear = () => {
   setPin("")
   setType("password")
 }
   
 const enter = () => {
-
-  if(pin === correctPin){
+    if(pin === correctPin){
    setType("text")
    setPin("OK")
    setTries(0)
-  } else if(pin !== correctPin && pin.length === 4){
+  }  if(pin !== correctPin && pin.length === 4){
+     setTries(tries + 1)
     setType("text")
    setPin("ERROR")
-   setTries((tries) => tries + 1)
-  }
-  
-   if(tries === 2){
+  } 
+
+  console.log(tries)
+   if(tries === 2 ){
     setType("text")
      setPin("LOCKED")
     setDisabled(true)
@@ -44,20 +52,30 @@ const enter = () => {
  if(pin === ""){
   setType("text")
   setPin("Please enter a pin code and then click on Enter")
+  setTries((tries) => tries + 1)
 } else if( pin.length < correctPin.length || pin.length > correctPin.length  ){
   setType("text")
     setPin("Pin should contain four numbers")
-  }  
+    setTries((tries) => tries + 1)
+  }  if( pin.length < correctPin.length && tries === 2 ){
+    setPin("LOCKED")
+  } else if(pin.length > correctPin.length && tries === 2 ){
+    setPin("LOCKED")
+  }
   
-if(pin==="Please enter a pin code and then click on Enter"){
+if(pin === "Please enter a pin code and then click on Enter"){
   setPin("Please enter a pin code and then click on Enter")
+  setTries((tries) => tries + 1)
+} if(pin === "Please enter a pin code and then click on Enter" && tries === 2){
+  setPin("LOCKED")
+
 }
 }
 
  if (pin === "LOCKED" && disabled === false){
  setTries(0)
- setPin((pin) => setPin(""))
- setType((type) => setType("password"))
+ setPin("")
+ setType("password")
 }
 
 
